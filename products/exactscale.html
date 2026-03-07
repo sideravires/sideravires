@@ -41,17 +41,20 @@
           <p class="hero-subtitle">Generate pixel-perfect App&nbsp;Store images directly from your Mac. No mockups. No manual resizing.</p>
           <p class="hero-tagline">App Store screenshots. Clean, fast, ready to upload.</p>
           <div class="hero-cta">
-            <a href="https://apps.apple.com/us/app/exactscale/id6758068645" class="mac-app-store-badge" target="_blank" rel="noopener noreferrer">
+            <a href="https://apps.apple.com/us/app/exactscale/id6758068645?mt=12" class="mac-app-store-badge" data-app-store-id="6758068645" target="_blank" rel="noopener noreferrer">
               <picture>
                 <source srcset="../images/Download_on_the_Mac_App_Store_Badge_US-UK_RGB_wht_092917.svg" media="(prefers-color-scheme: dark)">
                 <img src="../images/Download_on_the_Mac_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="Download on the Mac App Store" height="48" width="156">
               </picture>
             </a>
-            <p class="hero-meta">One-time purchase. No subscription.</p>
+            <p class="hero-meta">Available on the Mac App Store. No account required.</p>
           </div>
         </div>
         <div class="hero-image">
-          <img src="../images/hero.png" alt="ExactScale capture workflow" loading="lazy" width="1600" height="900" class="product-img">
+          <div class="progressive-media">
+            <img class="progressive-media__preview product-img" src="../images/hero-preview.jpg" alt="ExactScale capture workflow" loading="lazy" width="2560" height="1600" decoding="async">
+            <img class="progressive-media__full product-img" src="../images/hero.png" alt="" loading="lazy" width="2560" height="1600" decoding="async">
+          </div>
         </div>
       </div>
     </div>
@@ -71,7 +74,10 @@
           </ul>
         </div>
         <div class="media-placeholder">
-          <img src="../images/problems.png" alt="App Store upload and resolution problems" loading="lazy" width="1600" height="900" class="product-img">
+          <div class="progressive-media">
+            <img class="progressive-media__preview product-img" src="../images/problems-preview.jpg" alt="App Store upload and resolution problems" loading="lazy" width="2560" height="1600" decoding="async">
+            <img class="progressive-media__full product-img" src="../images/problems.png" alt="" loading="lazy" width="2560" height="1600" decoding="async">
+          </div>
         </div>
       </div>
     </div>
@@ -93,21 +99,30 @@
             <div class="step-number">1</div>
             <h3 class="step-title">Launch capture session</h3>
             <div class="step-image">
-              <img src="../images/step1.png" alt="Launch ExactScale capture session" loading="lazy" width="1600" height="900" class="product-img">
+              <div class="progressive-media">
+                <img class="progressive-media__preview product-img" src="../images/step1-preview.jpg" alt="Launch ExactScale capture session" loading="lazy" width="2880" height="1800" decoding="async">
+                <img class="progressive-media__full product-img" src="../images/step1.png" alt="" loading="lazy" width="2880" height="1800" decoding="async">
+              </div>
             </div>
           </div>
           <div class="step">
             <div class="step-number">2</div>
             <h3 class="step-title">Follow resolution wizard</h3>
             <div class="step-image">
-              <img src="../images/step2.png" alt="Resolution wizard" loading="lazy" width="1600" height="900" class="product-img">
+              <div class="progressive-media">
+                <img class="progressive-media__preview product-img" src="../images/step2-preview.jpg" alt="Resolution wizard" loading="lazy" width="2880" height="1800" decoding="async">
+                <img class="progressive-media__full product-img" src="../images/step2.png" alt="" loading="lazy" width="2880" height="1800" decoding="async">
+              </div>
             </div>
           </div>
           <div class="step">
             <div class="step-number">3</div>
             <h3 class="step-title">Export ready-to-upload screenshots</h3>
             <div class="step-image">
-              <img src="../images/step3.png" alt="Export screenshots" loading="lazy" width="1600" height="900" class="product-img">
+              <div class="progressive-media">
+                <img class="progressive-media__preview product-img" src="../images/step3-preview.jpg" alt="Export screenshots" loading="lazy" width="2560" height="1600" decoding="async">
+                <img class="progressive-media__full product-img" src="../images/step3.png" alt="" loading="lazy" width="2560" height="1600" decoding="async">
+              </div>
             </div>
           </div>
         </div>
@@ -185,13 +200,13 @@
     <div class="container">
       <h2>Ready to ship your app faster?</h2>
       <p>Get upload-ready App Store screenshots without mockups or manual resizing.</p>
-      <a href="https://apps.apple.com/us/app/exactscale/id6758068645" class="mac-app-store-badge" target="_blank" rel="noopener noreferrer">
+      <a href="https://apps.apple.com/us/app/exactscale/id6758068645?mt=12" class="mac-app-store-badge" data-app-store-id="6758068645" target="_blank" rel="noopener noreferrer">
         <picture>
           <source srcset="../images/Download_on_the_Mac_App_Store_Badge_US-UK_RGB_wht_092917.svg" media="(prefers-color-scheme: dark)">
           <img src="../images/Download_on_the_Mac_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="Download on the Mac App Store" height="44" width="143">
         </picture>
       </a>
-      <p class="hero-meta" style="margin-top: 16px;">One-time purchase. No subscriptions. No account required.</p>
+      <p class="hero-meta" style="margin-top: 16px;">Available on the Mac App Store. No account required.</p>
     </div>
   </section>
 
@@ -284,5 +299,7 @@
       updateButtons();
     })();
   </script>
+  <script src="../js/app-store-links.js"></script>
+  <script src="../js/progressive-images.js"></script>
 </body>
 </html>
