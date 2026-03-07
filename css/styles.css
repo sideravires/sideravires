@@ -270,6 +270,35 @@ a:hover {
   height: 44px;
 }
 
+/* Product card CTA: Learn More and App Store badge same size */
+.product-card-cta {
+  margin-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+}
+
+.product-card-cta .btn {
+  height: 40px;
+  min-height: 40px;
+  width: 156px;
+  min-width: 156px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1;
+  font-size: 15px;
+}
+
+.product-card-cta .mac-app-store-badge img {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
 .hero-meta {
   font-size: var(--font-size-small);
   color: var(--text-light);
@@ -558,6 +587,7 @@ a:hover {
 /* Media Placeholder */
 .media-placeholder {
   position: relative;
+  width: 100%;
   aspect-ratio: 16 / 10;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   border-radius: var(--border-radius);
@@ -627,6 +657,10 @@ a:hover {
 .product-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.product-card--coming-soon:hover {
+  transform: none;
 }
 
 .product-card h2 {
